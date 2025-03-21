@@ -1,3 +1,4 @@
+import Input from "./Input";
 import { useState } from "react";
 
 function AddTasks({ onAddTaskSubmit }) {
@@ -7,17 +8,17 @@ function AddTasks({ onAddTaskSubmit }) {
   return (
     <div className="bg-slate-200 space-y-4 p-6 rounded-md shadow flex flex-col">
       <h2 className="text-xl text-center font-bold">Add Task</h2>
-      <input
+
+      <Input
         type="text"
         placeholder="Task title"
-        className="border border-slate-300 outline-slate-400 px-4 py-2 rounded-md"
         value={title}
         onChange={(event) => setTitle(event.target.value)}
       />
-      <input
+
+      <Input
         type="text"
         placeholder="Task description"
-        className="border border-slate-300 outline-slate-400 px-4 py-2 rounded-md"
         value={description}
         onChange={(event) => setDescription(event.target.value)}
       />
