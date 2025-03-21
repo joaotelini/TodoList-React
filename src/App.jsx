@@ -64,7 +64,7 @@ function App() {
   return (
     <div className="w-full h-screen bg-slate-500 flex justify-center p-6">
       <div className="w-[500px] space-y-4">
-        <Title>Task Manangent</Title>
+        <Title>Task Management</Title>
         <AddTasks onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
           tasks={tasks}
